@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 16px;
+    background-color: hsl(233, 47%, 7%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    margin: 2.5em 0;
+    width: 22rem;
+    height: auto;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+}
+
+.image {
+    height: 14.5rem;
+    background-size: cover;
+    background: url(./images/image-header-desktop.jpg) no-repeat, hsl(277, 64%, 61%);
+    background-blend-mode: multiply;
+    border-radius: 10px;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5em 1.5em;
+}
+
+
+h1,
+.heading {
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.75rem;
+}
+
+.text {
+    font-size: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 1em 0 3em 0;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6)
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    gap: 2.25em;
+}
+
+.heading {
+    font-size: 1.5rem;
+}
+
+.small {
+    font-size: .875rem;
+}
+
+@media (min-width:1440px) {
+    .container {
+        width: 70rem;
+        height: auto;
+        display: flex;
+    }
+
+    .image {
+        width: 33.75rem;
+        height: 27.88rem;
+        background-size: cover;
+        background: url(./images/image-header-desktop.jpg) no-repeat, hsl(277, 64%, 61%);
+        background-blend-mode: multiply;
+        border-radius: 0 10px 10px 0;
+        order: 1;
+    }
+
+    .content {
+        max-width: 37rem;
+        display: flex;
+        align-items: flex-start;
+        text-align: start;
+        height: 100%;
+        padding: 4.375em 10em 0 4.375em;
+
+    }
+
+    .bottom {
+        flex-direction: row;
+        text-transform: uppercase;
+        line-height: 30px;
+        gap: 4em;
+        padding-right: 6.25em;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .small {
+        font-size: 0.875rem;
+    }
+
+    .text {
+        font-size: .9375rem;
+        line-height: 1.5rem;
+        text-align: start;
+        padding: 1.875em 0 4.375em 0;
+    }
+}
