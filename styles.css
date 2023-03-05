@@ -107,8 +107,7 @@ p {
         align-items: flex-start;
         text-align: start;
         height: 100%;
-        padding: 4.375em 10em 0 4.375em;
-
+        padding: 4.375em 7.5em 0 4.375em;
     }
 
     .bottom {
